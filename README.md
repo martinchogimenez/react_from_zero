@@ -1,2 +1,2 @@
 # react_from_zero
-Some code practises from a Carlos Azaustre React video.
+In this repository I am uploading some code from a Carlos Azaustre video about React. 
