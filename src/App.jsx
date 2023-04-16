@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Heading } from '@chakra-ui/react';
 import logo from './assets/logo-spacex.png'
 import * as API from "./services/launches";
 
@@ -12,7 +13,9 @@ export function App() {
   return (
     <> 
       <img src={logo} width={300} />
-        <h1>SpaceX Launche</h1>;
+        <Heading as="h1" size="1g">
+        <h1>SpaceX Launche</h1>
+        </Heading>
       <ul>
         {launches?.map((launch) => (
           <li key={launch.flight_number}>
