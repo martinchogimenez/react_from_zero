@@ -6,8 +6,12 @@ import {createRoot} from "react-dom/client"
 
 import { App } from "./App";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+
+// Get the container element where you want to render your component
+const container = document.getElementById('root');
+
+// Create the root object using the container element
+const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
@@ -15,5 +19,4 @@ root.render(
         <App />
       </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById("root")
 );
