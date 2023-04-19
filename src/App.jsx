@@ -28,8 +28,14 @@ export function App() {
           >
             <Flex display="flex">
               <Text fontSize="2x1">
-                Mission <strong>{launch.mission_name}</strong> ({launch.launch_year})
+                Mission <strong>{launch.mission_name}</strong> (
+                {launch.launch_year})
+
               </Text>
+              <Spacer />
+              <Tag p={4} colorScheme={launch.launch_success ? "gray" : "red"}>
+                {launch.launch_success ? "Success" : "Failure"}
+              </Tag>
             </Flex>
             {launch.mission_name} ({launch.launch_year})
           </Box>
