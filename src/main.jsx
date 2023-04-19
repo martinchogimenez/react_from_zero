@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import {createRoot} from "react-dom/client"
-//import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 import { App } from "./App";
 
@@ -15,8 +15,8 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
+      <ChakraProvider>
         <App />
-      </BrowserRouter>
+      </ChakraProvider>
   </React.StrictMode>,
 );
